@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://thymeleaf.org"  th:replace="~{base::layout(~{::section},'about-bg')}">
+<head>
+	<meta charset="UTF-8" />
+	<title>About Page</title>
+</head>
+<body>
+<section>
+    <div class="container mx-auto px-6 py-12">
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-bold text-teal-700 mb-4">About SmartContactManager</h1>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                Your ultimate solution for managing contacts efficiently, securely, and effortlessly.
+            </p>
+        </div>
+
+        <!-- Project Overview -->
+        <div class="mb-12 p-8 bg-white rounded-xl shadow-lg border-l-4 border-teal-500">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4 flex items-center">
+                <i class="fas fa-info-circle text-teal-500 mr-3"></i>Project Overview
+            </h2>
+            <p class="text-gray-700 leading-relaxed">
+                SmartContactManager is a full-stack web application designed to help users organize, 
+                store, and manage their contact information securely. Built with modern technologies, 
+                it provides a seamless experience for both individual users and teams.
+            </p>
+        </div>
+
+        <!-- Key Features Grid -->
+        <div class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-6 text-center">Key Features</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <div class="bg-teal-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-teal-600 text-3xl mb-3"><i class="fas fa-address-book"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Contact Management</h3>
+                    <p class="text-gray-600 text-sm">Add, edit, delete, and search contacts easily.</p>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-blue-600 text-3xl mb-3"><i class="fas fa-user-shield"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Secure Authentication</h3>
+                    <p class="text-gray-600 text-sm">Login/signup with Spring Security encryption.</p>
+                </div>
+
+                <div class="bg-green-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-green-600 text-3xl mb-3"><i class="fas fa-database"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Database Storage</h3>
+                    <p class="text-gray-600 text-sm">MySQL database for persistent data storage.</p>
+                </div>
+
+                <div class="bg-purple-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-purple-600 text-3xl mb-3"><i class="fas fa-file-upload"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Photo Upload</h3>
+                    <p class="text-gray-600 text-sm">Upload profile pictures for each contact.</p>
+                </div>
+
+                <div class="bg-orange-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-orange-600 text-3xl mb-3"><i class="fas fa-search"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">Search & Filter</h3>
+                    <p class="text-gray-600 text-sm">Find contacts quickly with advanced search.</p>
+                </div>
+
+                <div class="bg-pink-50 p-6 rounded-lg hover:shadow-lg transition-shadow duration-300">
+                    <div class="text-pink-600 text-3xl mb-3"><i class="fas fa-cog"></i></div>
+                    <h3 class="font-semibold text-lg mb-2">User Friendly</h3>
+                    <p class="text-gray-600 text-sm">Clean interface designed for easy navigation.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Stack Banner -->
+        <div class="mb-12 bg-gradient-to-r from-teal-500 to-teal-700 rounded-xl p-8 text-white">
+            <h2 class="text-2xl font-semibold mb-6 text-center">Technology Stack</h2>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fab fa-java mr-2"></i>Java
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-gavel mr-2"></i>Spring Boot
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-shield-alt mr-2"></i>Spring Security
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-database mr-2"></i>JPA / Hibernate
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-database mr-2"></i>MySQL
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fas fa-code mr-2"></i>HTML / CSS / Thymeleaf
+                </span>
+                <span class="bg-white/20 backdrop-blur px-4 py-2 rounded-full text-sm font-medium">
+                    <i class="fab fa-js mr-2"></i>JavaScript
+                </span>
+            </div>
+        </div>
+
+        <!-- Developer Note -->
+        <div class="text-center p-8 bg-gray-50 rounded-lg">
+            <div class="w-20 h-20 mx-auto mb-4 bg-teal-500 rounded-full flex items-center justify-center">
+                <i class="fas fa-code text-white text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Built With Passion</h3>
+            <p class="text-gray-600">
+                This project demonstrates best practices in Spring Framework development,
+                including secure authentication, database management, and responsive UI design.
+            </p>
+            <div class="mt-6">
+                <a href="/" class="inline-block bg-teal-600 text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition">
+                    <i class="fas fa-home mr-2"></i>Go Home
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
