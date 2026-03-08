@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section},'forgot-bg')">
+<head>
+	<meta charset="UTF-8" />
+	<title>This is Home Page</title>
+</head>
+<body>
+	<section>  
+	
+	  <div id="login"> 
+       
+      <div class="container">
+      
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box"  style="height: 250px; background-color: white;"  class="col-md-12">
+                       
+                        <!-- email form -->
+
+                        <h3 class="text-center m-3">Your Registered Email</h3>
+
+                           <div th:if="${message}"
+     th:class="'alert ' + ${message.type} +' mt-3'"
+     role="alert">
+    <span th:text="${message.content}"></span>
+</div>
+
+                        <form method="post" action="" th:action="@{/send-otp}">
+
+                            <div class="form-group">
+
+                                <input name="email" required type="email" placeholder="Enter email here" class="form-control">
+                            </div>
+                            <div class=" container text-center">
+                       <button class="btn btn-warning">Send OTP</button>
+                        </div>
+                        </form>
+                        </div>
+                        </div>
+                        
+            </div>
+        </div>
+    </div>
+	
+	</section>
+</body>
+</html>

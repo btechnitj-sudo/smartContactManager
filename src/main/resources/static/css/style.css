@@ -161,3 +161,18 @@ cursor:pointer;
   display: none;
 
 }
+
+.active{
+	background: #009688!important;
+	color: white!important;
+}
+
+/* #forgot {
+	
+  margin-top: 100px;
+  max-width: 600px;
+  height: 420px;
+  border: 1px solid #9C9C9C;
+  background-color:white;
+ 
+} */
